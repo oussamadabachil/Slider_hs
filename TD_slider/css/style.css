@@ -1,0 +1,107 @@
+
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Just+Another+Hand&display=swap');
+html{
+    font-size: 62.5%; 
+/* 16px * 62,5 10.00rem */
+}
+body{
+  font: 1.6rem sans-serif;
+  line-height: 1.6;
+  background: rgb(0, 0, 0);
+
+  margin: 0;
+}
+*{
+    box-sizing: border-box; /* 100px largeur + 10px padding + 1px border */
+}
+ul, 
+ol, 
+p,
+button,
+figure, 
+blockquote, h1, h2, h3, address{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    font-style: normal;
+}
+button{
+    background: transparent;
+    font-size: inherit;
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+img{
+    border:.1rem solid #ffff;
+
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.material-icons{
+    vertical-align: .5rem;
+    font-size: 3rem;
+}
+  .container {
+
+
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .slider{
+      margin:0 auto;
+      display: block;
+      max-width: 80%;
+  }
+  
+
+header>h1{
+    text-align: center;
+    color: #ffff;
+}
+  .slider img {
+    max-width: 100%;
+    display: none;
+  }
+  img.active {
+    display: block;
+    animation: fade 0.8s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .cont-btn {
+    margin:0 auto;
+
+    border:.1rem solid #ffff;
+    background-color: #ffff;
+    max-width: 80%;
+    height: auto;
+    box-shadow: 0 .1rem 1rem rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+  }
+  .btn-nav {
+    font-family: serif;
+    font-size: 1.3rem;
+    margin: 0 1.5rem;
+    padding: 2rem;
+    font-weight: 100;
+    cursor: pointer;
+  }
